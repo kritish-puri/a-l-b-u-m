@@ -1,16 +1,20 @@
-# album
+## Overview
+I have created a controller class which handles all three pages. Since add and edit page have exact requirements (2 TextEditingControllers), I have added them in HomeController itself. This same thing can be done with multiple controllers also.
 
-A new Flutter project.
+## Assumptions
+1. GetX for state management.
+2. No usage of named routes, since project is very small.
+3. Single controller for all three pages.
 
-## Getting Started
+## What’s Left To Do
+1. Named routing, if needed.
 
-This project is a starting point for a Flutter application.
+## Anything Else
+I have passed homeController as a parameter to AlbumListItem since finding/getting controller for each child item is very expensise and takes time also.
 
-A few resources to get you started if this is your first Flutter project:
+## Steps to run
+Open command prompt and run the following commands
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. git clone https://github.com/kritishpuri/a-l-b-u-m.git
+2. cd a-l-b-u-m
+3. flutter run
